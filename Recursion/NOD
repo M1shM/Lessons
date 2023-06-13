@@ -1,0 +1,8 @@
+function nod(number1, number2) {
+    if (! number2) {
+        return number1;
+    }
+    return nod(number2, number1 % number2);
+}
+
+console.log(nod(2, 25));
